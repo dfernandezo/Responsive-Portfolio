@@ -14,7 +14,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 25px;
   color: #f7f8f8;
-  margin-left: 190px;
+  margin-left: 2.5%;
   padding: 25px;
 }
 a {
@@ -24,18 +24,17 @@ a {
 .cabecera {
   display: flex;
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
-
 .nav {
   text-align: right;
-  margin-left: 580px;
   padding-top: 30px;
+  margin-right: 2.5%;
 }
-
 header {
   border-bottom: 2px solid #cccccc;
 }
-
 li {
   display: inline-block;
   list-style: none;
@@ -43,17 +42,21 @@ li {
   padding-left: 7px;
   color: #cccccc;
 }
-
 .rayita {
   border-right: 1px solid #cccccc;
 }
-
+section,
+article {
+  color: #777777;
+  background-color: #ffffff;
+}
 .page {
   background-color: #ffffff;
   width: 960px;
   margin: 80px auto auto auto;
   border: 1px solid #dddddd;
-  margin-bottom: 50px;
+  margin-bottom: 2em;
+}
 }
 
 hr {
@@ -103,6 +106,7 @@ button {
 }
 
 footer {
+  position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -111,4 +115,39 @@ footer {
   text-align: center;
   border-top: 5px solid #4aaaa5;
   color: #dbd6d6;
+}
+@media (max-width: 980px) {
+  .title {
+    background: #4aaaa5;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 25px;
+    color: #f7f8f8;
+    margin-left: 0px;
+    padding: 25px;
+    text-align: center;
+  }
+  a {
+    color: #cccccc;
+    text-decoration: none;
+  }
+  .cabecera {
+    display: block;
+    background-color: #ffffff;
+  }
+  .nav {
+    text-align: center;
+    margin: auto;
+    padding: 17px;
+  }
+  .page {
+    background-color: #ffffff;
+    width: 80%;
+    border: 1px solid #dddddd;
+    margin-bottom: 7em;
+  }
+}
+@media (max-width: 640px) {
+  .page {
+    margin-bottom: 5em;
+  }
 }

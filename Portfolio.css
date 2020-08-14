@@ -71,6 +71,7 @@ hr {
 }
 
 .container {
+  display: contents;
   flex-direction: column;
   flex-wrap: wrap;
   width: 60%;
